@@ -1,0 +1,301 @@
+/* Global styling */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    padding: 3% 10%;
+}
+
+/* Styling for the line with text */
+.line-with-text {
+    position: relative;
+    text-align: center;
+    border-top: 2px solid #c8c8c8;
+    height: 30px;
+}
+
+/* Span within line-with-text */
+.line-with-text span {
+    position: relative;
+    top: -10px;
+    background-color: white;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ff6b82;
+}
+
+/* Styling for items */
+.item {
+    border: 1px solid #c8c8c8;
+    padding: 2rem;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.inner-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Item text styling */
+.item b {
+    font-size: 16px;
+}
+
+.item p {
+    font-size: 14px;
+    margin: 2px;
+}
+
+/* Discount styling */
+.item .discount {
+    padding: 2px 8px;
+    background-color: #ff6b82;
+    margin: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+/* Price styling */
+.item .price {
+    text-align: right;
+    margin-left: auto;
+}
+
+.item .price div:first-child {
+    font-weight: 600;
+}
+
+.item .price span {
+    font-size: 12px;
+    opacity: 0.3;
+    text-decoration: line-through;
+    float: left;
+}
+
+/* Radio button styling */
+.item [type='radio'] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    accent-color: #ff6b82;
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.item [type='radio']:checked {
+    background-color: #ff6b82;
+    border-color: #ffffff;
+    outline: 1px solid #ff6b82;
+}
+
+.item [type='radio']:focus {
+    outline: 1px solid #ff6b82;
+    border-color: #ffffff;
+}
+
+/* Order summary styling */
+.order-summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-summary span:first-child {
+    color: #ff6b82;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    background-color: #ff6b82;
+    color: white;
+    text-align: center;
+    margin: 20px 0 0 0;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+button span {
+    font-size: 25px;
+    margin:0 8px;
+
+}
+
+/* Select box styling */
+select {
+    width: 80px;
+    height: 30px;
+    margin: 2px;
+    border: 1px solid #c8c8c8;
+}
+
+/* Table styling */
+table {
+    padding: 24px;
+}
+
+table thead th {
+    font-size: 14px;
+    text-align: left;
+    font-weight: normal;
+}
+
+table td {
+    font-size: 12px;
+}
+
+/* Styling for selected section */
+.selected-section {
+    background-color: #FFF9FA;
+    border: 2px solid #ff6b82;
+}
+
+/* Copyright text styling */
+.copyright {
+    color: #ccc;
+    font-size: 14px;
+    float: right;
+}
+
+/* Hidden element styling */
+.d-none {
+    display: none;
+}
+
+/* Item container for positioning the "Most Popular" label */
+.item {
+    position: relative;
+}
+
+/* Styling for the "Most Popular" label */
+.most-popular {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    background-color: #ff6b82;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 119px;
+    height: 20px;
+    border-radius: 0px 0px 4px 4px;
+    opacity: 1;
+    text-align: center;
+}
+
+/* Optional: Hide the "Most Popular" label */
+.most-popular.hidden {
+    opacity: 0;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .item {
+        padding: 1rem;
+    }
+
+    .item b,
+    .item p {
+        font-size: 12px;
+    }
+
+    .item .discount {
+        font-size: 10px;
+    }
+
+    .line-with-text span {
+        font-size: 16px;
+    }
+
+    select {
+        width: 60px;
+        height: 30px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .order-summary span:first-child {
+        font-size: 14px;
+    }
+
+
+
+    /* Styling for the "Most Popular" label */
+    .most-popular {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        background-color: #ff6b82;
+        color: white;
+        padding: 0px 5px;
+        border-radius: 5px;
+        font-size: 10px;
+        width: 119px;
+        height: 13px;
+        border-radius: 0px 0px 4px 4px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    /* Optional: Hide the "Most Popular" label */
+    .most-popular.hidden {
+        opacity: 0;
+    }
+
+
+}
+
+/* Media query for very small screens (max-width: 320px) */
+@media (max-width: 320px) {
+
+    .item b,
+    .item p {
+        font-size: 10px;
+    }
+
+    .item .discount {
+        font-size: 8px;
+    }
+
+    select {
+        width: 60px;
+        height: 30px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+
+    /* Styling for the Most Popular label */
+    .most-popular {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        background-color: #ff6b82;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 119px;
+        height: 20px;
+        border-radius: 0px 0px 4px 4px;
+        opacity: 1;
+        text-align: center;
+    }
+
+ 
+}
